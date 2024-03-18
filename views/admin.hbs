@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="show-messages">
+    <h1>messages here</h1>
+    {{#each messages as |message|}}
+    <div class="all-data">
+      <h3>
+        {{message.name}}
+      </h3>
+      <h4>
+        {{message.email}}
+      </h4>
+      <p>
+        {{message.message}}
+      </p>
+    </div>
+    {{/each}}
+  </div>
+</body>
+
+</html>
